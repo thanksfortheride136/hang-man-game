@@ -39,7 +39,12 @@ def game_complete():
     None
 
 def main():
-    greeting_fun = greeting()
-    string_letters = string_to_letters(greeting_fun)
-    guess = user_guess(string_letters) 
+    #does while logicgo here
+    while guess[0] > 0:
+        greeting_fun = greeting()
+        string_letters = string_to_letters(greeting_fun)
+        guess = user_guess(string_letters)
+    else:
+        game_complete()
+
 main()
